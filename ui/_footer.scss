@@ -1,0 +1,22 @@
+$lato: "Lato", sans-serif;
+$roboto: "Roboto Condensed", sans-serif;
+
+.footer-container {
+	background: #0077b6;
+	height: 50px;
+	width: 100%;
+	position: fixed;
+	height: 30px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin-bottom: 0px;
+
+	& .copyright {
+		color: white;
+		font-family: $lato;
+		opacity: 0.5;
+		font-size: 0.8rem;
+		margin: 0 auto;
+	}
+}

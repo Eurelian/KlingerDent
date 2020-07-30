@@ -1,0 +1,155 @@
+$title-color: #4a4b65;
+$text-color: #737491;
+$lato: "Lato", sans-serif;
+$roboto: "Roboto Condensed", sans-serif;
+
+$gradient-color: linear-gradient(
+	243deg,
+	rgba(0, 119, 182, 1) 0%,
+	rgba(0, 180, 216, 1) 100%
+);
+$button-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2);
+$button-shadow-hover: 2px 2px 20px 1px rgba(0, 0, 0, 0.2);
+
+.section-title {
+	color: $title-color;
+	font-family: $roboto;
+	font-weight: bold;
+	font-size: 32px;
+}
+
+.section-text {
+	color: $text-color;
+	font-family: $lato;
+	line-height: 1.6;
+	font-size: 1rem;
+}
+
+.card-background {
+	position: absolute;
+	background: $gradient-color;
+	opacity: 0.9;
+	height: 100%;
+	width: 100%;
+	clip-path: polygon(8% 11%, 88% 0, 100% 100%, 0 89%);
+}
+
+.card {
+	box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	transition: all 0.4s ease-in-out;
+	max-width: 338px;
+	min-width: 278px;
+
+	border-radius: 10px;
+	&:hover {
+		transform: translate(2px, -6px);
+		box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.1);
+		button {
+			transform: translateY(50px);
+			opacity: 1;
+		}
+
+		img {
+			opacity: 0.4;
+		}
+	}
+}
+
+.card-img-overlay {
+	transition: all 0.4s ease-in-out;
+}
+
+.card-img {
+	opacity: 0.4;
+	transition: all 0.4s ease-in-out;
+}
+
+.card-img-top {
+	transition: all 0.4s ease-in-out;
+}
+
+.display-overlay {
+	opacity: 0;
+	transition: all 0.4s ease-in-out;
+}
+
+.card-img-top {
+	border-radius: 10px 10px 0 0;
+	&:hover {
+		box-shadow: inset 0px -12px 33px -16px rgba(0, 229, 245, 1);
+	}
+}
+
+.card-text {
+	font-family: $lato;
+	color: $text-color;
+	font-size: 0.9rem;
+	line-height: 1.6;
+}
+
+.card-title {
+	font-family: $roboto;
+	font-weight: bold;
+	font-size: 28px;
+	color: $title-color;
+}
+
+.card-btn {
+	background: $gradient-color;
+	padding: 10px 15px;
+	border: none;
+	opacity: 0;
+	color: white;
+	min-width: 150px;
+	max-height: 40px;
+	transition: all 0.3s ease-in-out;
+	box-shadow: $button-shadow;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+
+	transform: translateY(-40px);
+	font-family: $roboto;
+	font-size: 0.8rem;
+
+	&:hover {
+		color: white;
+	}
+}
+
+.map-box {
+	width: 500px;
+	height: 450px;
+
+	border-radius: 15px;
+	box-shadow: $button-shadow;
+	border: none;
+}
+
+th {
+	font-family: $roboto;
+	font-weight: bold;
+	font-size: 20px;
+	color: $title-color;
+	padding: 8px;
+}
+td {
+	font-family: $lato;
+	color: $text-color;
+	padding: 8px;
+}
+a {
+	color: $title-color;
+	font-family: $roboto;
+	font-size: 18px;
+}
+
+@media only screen and (max-width: 591px) {
+	.map-box {
+		width: 350px;
+		height: 300px;
+	}
+	.nav-link {
+		font-size: 0.8rem;
+	}
+}
