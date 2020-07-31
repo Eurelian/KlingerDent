@@ -10,7 +10,7 @@ const MainDescription = () => {
 		<div className='container'>
 			<motion.div
 				ref={ref}
-				animate={{ x: inView ? 0 : 200, opacity: inView ? 1 : 0 }}
+				animate={{ y: inView ? 0 : 150, opacity: inView ? 1 : 0 }}
 				transition={{ ease: "easeOut", duration: 0.7 }}
 				className='row mb-5'
 			>
