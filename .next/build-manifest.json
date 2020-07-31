@@ -31,14 +31,6 @@
     "/index": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
-    ],
-    "/leistungen": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/praxis": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
     ]
   }
 }

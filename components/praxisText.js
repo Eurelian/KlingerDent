@@ -10,7 +10,7 @@ const PraxisText = () => {
 	return (
 		<div className='pt-5 container'>
 			<div className='row m-0 mb-3'>
-				<h1 className='section-title'>Klinger Praxis</h1>
+				<h1 className='title'>Klinger Praxis</h1>
 			</div>
 			<div className='row align-items-center mb-5'>
 				<div className='col-md-7 mb-4'>

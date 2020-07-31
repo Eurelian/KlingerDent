@@ -25,8 +25,8 @@ const NavbarMain = () => {
 		>
 			<div className='container'>
 				<Link href='/'>
-					<a className={scroll ? "brand-display" : "navbar-brand"}>
-						<p className='brand-title-main'>Klinger</p>
+					<a className={scroll ? "brand-display m-0" : "navbar-brand m-0"}>
+						<p className='brand-title-main m-0'>Klinger</p>
 					</a>
 				</Link>
 				<button
